@@ -17,3 +17,5 @@ Tags: FUNDAMENTALS, STRINGS
 function doubleChar(str) {
     return str.replace(/./g, '$&$&');
   }
+
+  
