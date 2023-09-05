@@ -17,4 +17,4 @@ function booleanToString(b){
 
 function booleanToString(b){
     return b.toString();
-  }
+}
