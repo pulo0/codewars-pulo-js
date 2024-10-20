@@ -15,8 +15,20 @@
     Tags: ARRAYS, FUNDAMENTALS
 */
 
+// Solution 1
+
 function findNeedle(haystack) {
     for(let i = 0; i < haystack.length; i++) {
       if(haystack[i] == 'needle') { return "found the needle at position " + i; }
     }
   }
+
+// Solution 2
+function findNeedle(haystack) {
+  return `found the needle at position ${haystack.findIndex((e) => e == 'needle')}`;
+}
+
+// Solution 3 (even more easy)
+function findNeedle(haystack) {
+  return `found the needle at position ${haystack.indexOf('needle')}`;
+}
